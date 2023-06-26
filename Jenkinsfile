@@ -1,13 +1,13 @@
 pipeline {
   environment {
-    dockerimagename = "rupeshsaini09/rupesh-newwebapp"
+    dockerimagename = "rupeshsaini09/webapp"
     dockerImage = ""
   }
   agent any
   stages {
     stage('Checkout Source') {
       steps {
-        git 'https://github.com/rupeshsaini09/rupesh-webapp.git'
+        git 'https://github.com/rupeshsaini09/webapp.git'
       }
     }
     stage('Build image') {
